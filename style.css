@@ -2,16 +2,22 @@
   margin: 0;
   padding: 0;
   font-family: "poppins", sans-serif;
+  box-sizing: border-box;
 }
 body {
   background: #efefef;
 }
+
+/* ----------------------- NAVBAR -----------------------*/
 nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
   background: #1876f2;
   padding: 5px 5%;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 .logo {
   width: 160px;
@@ -69,4 +75,112 @@ nav {
   position: absolute;
   top: 0;
   right: 0;
+}
+/* ----------------------- CONTAINER -----------------------*/
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 13px 5%;
+}
+.leftSidebar {
+  flex-basis: 25%;
+  position: sticky;
+  top: 70px;
+  align-self: flex-start;
+}
+.rightSidebar {
+  flex-basis: 25%;
+  position: sticky;
+  top: 70px;
+  align-self: flex-start;
+  background: #fff;
+  padding: 20px;
+  border-radius: 4px;
+  color: #626262;
+}
+.mainContent {
+  flex-basis: 47%;
+}
+.impLinks {
+  border-bottom: 1px solid #ccc;
+}
+.impLinks a,
+.shortcutLinks a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  color: #626262;
+  width: fit-content;
+}
+.impLinks a img {
+  width: 25px;
+  margin-right: 15px;
+}
+.impLinks a:last-child {
+  color: #1876f2;
+}
+.shortcutLinks a img {
+  width: 40px;
+  border-radius: 4px;
+  margin-right: 15px;
+}
+.shortcutLinks p {
+  margin: 25px 0;
+  color: #626262;
+  font-weight: 600;
+}
+.sidebarTitle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+.sidebarTitle h4 {
+  font-weight: 600px;
+  font-size: 16px;
+}
+.sidebarTitle a {
+  text-decoration: none;
+  color: #1876f2;
+  font-size: 12px;
+}
+.event {
+  display: flex;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+.leftEvent {
+  border-radius: 10px;
+  height: 65px;
+  width: 65px;
+  margin-right: 15px;
+  padding-top: 10px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.event p {
+  font-size: 12px;
+}
+.event a {
+  font-size: 12px;
+  text-decoration: none;
+  color: #1876f2;
+}
+.leftEvent span {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #1876f2;
+  color: #fff;
+  font-size: 10px;
+  padding: 4px 0;
+}
+.sidebarADs {
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 4px;
 }
